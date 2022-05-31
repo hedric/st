@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "UbuntuMono:pixelsize=20:antialias=true:autohint=false";
+static char *font = "Iosevka Nerd Font Mono:pixelsize=20:antialias=true:autohint=false";
 static int borderpx = 2;
 
 /*
@@ -341,6 +341,7 @@ static Key key[] = {
 	{ XK_Right,         XK_ANY_MOD,     "\033OC",        0,   +1},
 	{ XK_ISO_Left_Tab,  ShiftMask,      "\033[Z",        0,    0},
 	{ XK_Return,        Mod1Mask,       "\033\r",        0,    0},
+	{ XK_Return,        ShiftMask,      "\033[13;2u",    0,    0},
 	{ XK_Return,        XK_ANY_MOD,     "\r",            0,    0},
 	{ XK_Insert,        ShiftMask,      "\033[4l",      -1,    0},
 	{ XK_Insert,        ShiftMask,      "\033[2;2~",    +1,    0},
